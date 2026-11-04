@@ -1,0 +1,33 @@
+# Secrets
+.env
+
+# Live player data and backups (never commit these)
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3.*
+*.partial
+backups/
+
+# Player uploads
+profile_tags/
+profile_backgrounds/
+
+# Large art assets (1+ GB) - keep them out of the repo
+resources/Cards/
+resources/Portraits/
+resources/Duelists/
+*.7z
+
+# Logs
+kuribot.log
+kuribot.log.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Throwaway database copies made by the offline checks
+devtools/sandbox/
